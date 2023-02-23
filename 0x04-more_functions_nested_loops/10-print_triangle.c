@@ -3,12 +3,13 @@
 /**
  * print_triangle - prints a triangle, followed by a new line
  */
-void print_triangle(int size)
+
+void print_triangle(int size);
 {
 if (size <= 0)
 {
 _putchar('\n');
-} 
+}
 else
 {
 int i, j;
