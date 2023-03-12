@@ -12,16 +12,17 @@ int check_num(char *str)
 {
     /*Declaring variables*/
     unsigned int count;
-    count = 0;
+count = 0;
     while (count < strlen(str)) /*count string*/
-    {
+{
         if (!isdigit(str[count])) /*check if str there are digit*/
         {
             return (0);
-        }         count++;
+}
+count++;
     }
-    return (1);
-} 
+return (1);
+}
 /**
 * main - Print the name of the program
 * @argc: Count arguments
@@ -32,11 +33,11 @@ int check_num(char *str)
 {     /*Declaring variables*/
     int count;
     int str_to_int;
-    int sum = 0;
+int sum = 0;
     count = 1;
     while (count < argc) /*Goes through the whole array*/
     {
-        if (check_num(argv[count]))
+if (check_num(argv[count]))
         {
             str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
             sum += str_to_int;
